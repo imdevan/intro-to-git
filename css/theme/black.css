@@ -12,9 +12,13 @@
 
 .left-align, .cheatsheet {
   text-align: left; }
+  .left-align h3, .cheatsheet h3 {
+    border-left: 3px solid #42affa; }
 
 .right-align {
   text-align: right; }
+  .right-align h3 {
+    border-right: 3px solid #42affa; }
 
 .op-50 {
   opacity: 0.5; }
@@ -27,6 +31,10 @@
 .h-80 {
   height: 80%;
   width: auto; }
+
+.table-of-context h3 {
+  padding-left: 2rem;
+  padding-right: 2rem; }
 
 .cheatsheet p, .cheatsheet ul > li {
   font-size: 1rem; }

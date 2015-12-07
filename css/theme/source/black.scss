@@ -48,9 +48,15 @@ $heading4Size: 1.0em;
 }
 .left-align{
 	text-align: left;
+	h3 {
+		border-left: 3px solid $linkColor;
+	}
 }
 .right-align {
 	text-align: right;
+	h3 {
+		border-right: 3px solid $linkColor;
+	}
 }
 .op-50 {
 	opacity: 0.5;
@@ -65,6 +71,12 @@ $heading4Size: 1.0em;
 	width: auto;
 }
 .table-of-context {
+	h3 {
+		padding:{
+			left: 2rem;
+			right: 2rem;
+		};
+	}
 }
 .cheatsheet {
 	@extend .left-align;
