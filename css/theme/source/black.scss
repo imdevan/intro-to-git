@@ -59,6 +59,11 @@ $heading4Size: 1.0em;
 	width: 49%;
 	box-sizing: border-box;
 	float: left;
+
+	.reveal ul& {
+		@extend .w-50;
+		margin: 0;
+	}
 }
 .h-80 {
 	height: 80%;

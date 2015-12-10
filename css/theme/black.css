@@ -19,10 +19,12 @@
 .op-50 {
   opacity: 0.5; }
 
-.w-50 {
+.w-50, .reveal ul& {
   width: 49%;
   box-sizing: border-box;
   float: left; }
+  .reveal ul& {
+    margin: 0; }
 
 .h-80 {
   height: 80%;
