@@ -49,6 +49,9 @@ $heading4Size: 1.0em;
 .left-align{
 	text-align: left;
 }
+.right-align {
+	text-align: right;
+}
 .op-50 {
 	opacity: 0.5;
 }
@@ -73,6 +76,10 @@ section.has-light-background {
 	&, h1, h2, h3, h4, h5, h6 {
 		color: #222;
 	}
+}
+
+.reveal pre code {
+	padding: 2em !important;
 }
 
 // Theme template ------------------------------
