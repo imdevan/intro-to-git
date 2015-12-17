@@ -17,7 +17,9 @@
   opacity: 0.5; }
 
 .w-50 {
-  width: 50%; }
+  width: 49%;
+  box-sizing: border-box;
+  float: left; }
 
 .cheatsheet p, .cheatsheet ul > li {
   font-size: 1rem; }

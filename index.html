@@ -56,7 +56,7 @@
 					</section>
 					<section>
 						<h2>Some Definitions</h2>
-						<div class="left-align">
+						<small class="left-align w-50">
 							<h3>Repo(sitory)</h3>
 							<p>A collection of code</p>
 							<h3>Branch</h3>
@@ -64,9 +64,17 @@
 							<h3>Remote</h3>
 							<p>Url where collection is hosted that isn't local</p>
 							<!-- Most projects will have an upstream (branch forked from) and origin collabor's branch -->
+							<h3>Fork</h3>
+							<p>Copy of repo to another repo owned by the forker	&#8482;</p>
+							<h3>Clone</h3>
+							<p>Local copy of a repo</p>
+						</small>
+						<small class="left-align w-50">
+							<h3>Collaborator</h3>
+							<p>Somone contributing to a project</p>
 							<h3>Organization</h3>
 							<p>Provides a common place for projects that have more than one collaborator</p>
-						</div>
+						</small>
 					</section>
 				</section>
 
@@ -291,15 +299,6 @@ git push origin master --force
 					<section>
 						<h2>Undoing Remote Changes</h2>
 					</section>
-
-					<section>
-						<h2>Reset the Whole Dang Thing!</h2>
-						<pre><code class="hljs" data-trim contenteditable>
-git fetch upstream
-git reset --hard upstream/master
-git push origin master --force
-						</code></pre>
-					</section>
 					<section>
 						<h2>Go Back to a Previous Commit</h2>
 						<pre><code class="hljs" data-trim contenteditable>
@@ -308,7 +307,15 @@ git revert [commit]
 						<pre><code class="hljs" data-trim contenteditable>
 git reset --hard [commit]
 						</code></pre>
-
+					</section>
+					<section class="has-dark-background" data-background-transition="fade" data-background="#000000">
+						<h2 class="white">Reset</h2>
+						<pre><code class="hljs" data-trim contenteditable>
+git fetch upstream
+git reset --hard upstream/master
+git push origin master --force
+						</code></pre>
+						<img src="https://octodex.github.com/images/grim-repo.jpg" alt="">
 					</section>
 				</section>
 
