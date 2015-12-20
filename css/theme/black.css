@@ -16,6 +16,9 @@
 .op-50 {
   opacity: 0.5; }
 
+.w-50 {
+  width: 50%; }
+
 .cheatsheet p, .cheatsheet ul > li {
   font-size: 1rem; }
 
