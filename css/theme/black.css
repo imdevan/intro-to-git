@@ -4,6 +4,9 @@
  * By Hakim El Hattab, http://hakim.se
  */
 @import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+.white {
+  color: #fff !important; }
+
 .red {
   color: #FE8F8E; }
 

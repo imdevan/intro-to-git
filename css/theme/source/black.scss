@@ -16,7 +16,7 @@
 
 
 // Override theme settings (see ../template/settings.scss)
-$backgroundColor: #fff;
+
 
 $mainColor: #444;
 $headingColor: #444;
@@ -32,12 +32,17 @@ $linkColor: #42affa;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 $red: #FE8F8E;
+$white: #fff;
 
+$backgroundColor: $white;
 $heading1Size: 2.5em;
 $heading2Size: 1.6em;
 $heading3Size: 1.3em;
 $heading4Size: 1.0em;
 
+.white {
+	color: $white !important;
+}
 .red {
 	color: $red;
 }
