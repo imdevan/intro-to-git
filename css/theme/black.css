@@ -4,14 +4,19 @@
  * By Hakim El Hattab, http://hakim.se
  */
 @import url(../../lib/font/source-sans-pro/source-sans-pro.css);
-.cheatsheet {
+.left-align, .cheatsheet {
   text-align: left; }
-  .cheatsheet p, .cheatsheet ul > li {
-    font-size: 1rem; }
-  .reveal .cheatsheet ul {
-    width: 49%;
-    box-sizing: border-box;
-    margin: auto !important; }
+
+.op-50 {
+  opacity: 0.5; }
+
+.cheatsheet p, .cheatsheet ul > li {
+  font-size: 1rem; }
+
+.reveal .cheatsheet ul {
+  width: 49%;
+  box-sizing: border-box;
+  margin: auto !important; }
 
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }

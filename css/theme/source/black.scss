@@ -37,8 +37,14 @@ $heading2Size: 1.6em;
 $heading3Size: 1.3em;
 $heading4Size: 1.0em;
 
-.cheatsheet {
+.left-align{
 	text-align: left;
+}
+.op-50 {
+	opacity: 0.5;
+}
+.cheatsheet {
+	@extend .left-align;
 	p, ul > li {
 		font-size: 1rem;
 	}
@@ -54,7 +60,6 @@ section.has-light-background {
 		color: #222;
 	}
 }
-
 
 // Theme template ------------------------------
 @import "../template/theme";
