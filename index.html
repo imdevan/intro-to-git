@@ -232,18 +232,71 @@ git rebase master
 
 				<section>
 					<h2>Submitting a Pull Request</h2>
+					<ul>
+						<li>No coding neaded for this one</li>
+					</ul>
 				</section>
 
 				<section>
 					<h2>Reviewing a Pull Request</h2>
+					<p>Makes local branch of pull request for testing</p>
+					<pre><code class="hljs" data-trim contenteditable>
+git fetch upstream pull/[pull request number]/head:[branch name]
+git checkout [branch name]
+					</code></pre>
 				</section>
 
 				<section>
-					<h2>Undoing Local Changes</h2>
+					<section>
+						<h2>Undoing Local Changes</h2>
+					</section>
+					<section>
+						<h2>Stash</h2>
+						<pre><code class="hljs" data-trim contenteditable>
+git stash
+git stash pop
+git stash
+						</code></pre>
+					</section>
+					<section>
+						<h2>Checking Out Files Again</h2>
+						<pre><code class="hljs" data-trim contenteditable>
+git checkout -- [file path]
+						</code></pre>
+					</section>
+					<section>
+						<h2>Reset the Whole Dang Thing!</h2>
+						<pre><code class="hljs" data-trim contenteditable>
+git fetch upstream
+git reset --hard upstream/master
+git push origin master --force
+						</code></pre>
+					</section>
 				</section>
 
 				<section>
-					<h2>Undoing Remote Changes</h2>
+					<section>
+						<h2>Undoing Remote Changes</h2>
+					</section>
+
+					<section>
+						<h2>Reset the Whole Dang Thing!</h2>
+						<pre><code class="hljs" data-trim contenteditable>
+git fetch upstream
+git reset --hard upstream/master
+git push origin master --force
+						</code></pre>
+					</section>
+					<section>
+						<h2>Go Back to a Previous Commit</h2>
+						<pre><code class="hljs" data-trim contenteditable>
+git revert [commit]
+						</code></pre>
+						<pre><code class="hljs" data-trim contenteditable>
+git reset --hard [commit]
+						</code></pre>
+
+					</section>
 				</section>
 
 				<section>
@@ -255,8 +308,9 @@ git rebase master
 					<ul>
 						<li>git init</li>
 						<li>git add -A</li>
+						<li>git add [file name]</li>
 						<li>git commit -m "[commit here]"</li>
-						<li>git remote add origin [https://github.com/imdevan/intro-to-git.git]</li>
+						<li>git remote add origin [git repo url]</li>
 						<li>git push --set-upstream origin master</li>
 					</ul>
 					<ul>
@@ -274,6 +328,38 @@ git rebase master
 						<li>git commit --amend --no-edit</li>
 						<li>git push</li>
 						<li>git push -f</li>
+					</ul>
+					<ul>
+						<li>git fetch [remote] [branch optional]</li>
+						<li>git merge [branch]</li>
+						<li>git rebase [branch]</li>
+						<li>git rebase --abort</li>
+						<li>git rebase --continue</li>
+						<li>git mergetool</li>
+						<li>git rm [file name]</li>
+						<li>git diff --name-only --div-filter=U</li>
+					</ul>
+					<ul>
+						<li>git reset --hard HEAD</li>
+						<li>git checkout HEAD [file]</li>
+						<li>git reset --hard [commit]</li>
+						<li>git stash</li>
+						<li>git blame [file]</li>
+						<li>git log -1</li>
+					</ul>
+					<ul>
+						<li>git branch</li>
+						<li>git branch [new branch name]</li>
+						<li>git branch -D [branch name]</li>
+						<li>git checkout [branch name]</li>
+						<li>git checkout -b [new branch name]</li>
+					</ul>
+					<ul>
+						<li>git fetch upstream && git reset --hard upstream/master && git push origin master --force</li>
+					</ul>
+
+					<ul>
+
 					</ul>
 				</section>
 
@@ -307,7 +393,7 @@ git rebase master
 						Created by <a href="http://imdevan.github.io" target="_blank">Devan Huapaya</a> / <a href="http://twitter.com/devanipsum" target="_blank">@devanIpsum</a>
 					</p>
 					<p><small>images from <a href="https://octodex.github.com/">https://octodex.github.com/</a></small></p>
-					<img src=" https://octodex.github.com/images/deckfailcat.png" alt="">
+					<img src="https://octodex.github.com/images/dunetocat.png" alt="">
 				</section>
 
 

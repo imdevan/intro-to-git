@@ -38,8 +38,14 @@ $heading3Size: 1.3em;
 $heading4Size: 1.0em;
 
 .cheatsheet {
+	text-align: left;
 	p, ul > li {
 		font-size: 1rem;
+	}
+	.reveal & ul {
+		width: 49%;
+		box-sizing: border-box;
+		margin: auto !important;
 	}
 }
 
