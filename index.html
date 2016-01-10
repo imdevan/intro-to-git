@@ -106,79 +106,145 @@
 					<img src="https://octodex.github.com/images/adventure-cat.png" alt="">
 				</section>
 
-				<section data-markdown>
+				<section>
 					<h2>Starting a repo</h2>
 
-					```
-					git init
-					git add -A
-					git commit -m “first commit”
-					git remote add origin https://github.com/imdevan/intro-to-git.git
-					git push --set-upstream origin master or git push -u origin master
-
-					```
+					<pre><code class="hljs" data-trim contenteditable>
+git init
+git add -A
+git commit -m “first commit”
+git remote add origin https://github.com/imdevan/intro-to-git.git
+git push --set-upstream origin master or git push -u origin master
+					</code></pre>
 				</section>
 
-				<section data-markdown>
+				<section>
 					<h2>Cloning a repo</h2>
-					```
-					git clone [repo url]
-					rm -rf .git
-					git init
-					git add -A
-					git commit -m “first commit”
-					git remote add origin [your repo url]
-					git push --set-upstream origin master or git push -u origin master
-					```
+					<pre><code class="hljs" data-trim contenteditable>
+git clone [repo url]
+rm -rf .git
+git init
+git add -A
+git commit -m “first commit”
+git remote add origin [your repo url]
+git push --set-upstream origin master or git push -u origin master
+				</code></pre>
 				</section>
 
-				<section data-markdown>
-					<h2>Pushing to a repo</h2>
-					```
-					git add -A
-					git commit -m "commit message”
-					git push
-					```
+				<section>
+					<h2>Pushing Changes to a Repo</h2>
+					<img src="https://octodex.github.com/images/octobiwan.jpg" alt="">
 				</section>
 
 				<section>
 					<h2>Pushing to a repo</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+git add -A
+git commit -m "commit message”
+git push
+					</code></pre>
 				</section>
 
 				<section>
+					<h2>Pulling changes to a repo</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+						git pull
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Branches, Merging and Rebasing</h2>
 					<img src="https://octodex.github.com/images/megacat-2.png" alt="">
 				</section>
 
 				<section>
-					<h2>Dealing with branches</h2>
+					<section>
+						<h2>Dealing with branches</h2>
+						<pre><code class="hljs" data-trim contenteditable>
+git branch [branch name]
+git checkout [switch to branch]
+git checkout -b [switch to new branch]
+						</code></pre>
+					</section>
+					<section>
+						<h2>git branch [branch name]</h2>
+						<ul>
+							<li>Shows list of current branches</li>
+							<li>Switches to branch if one is provided</li>
+						</ul>
+					</section>
+					<section>
+						<h2>git checkout [branch name]</h2>
+						<ul>
+							<li>Switches to branch if one is provided</li>
+							<li>
+								You can also checkout files using
+							</li>
+						</ul>
+						<pre><code data-trim>
+							git checkout -- [optional branch name] [file name]
+						</code></pre>
+					</section>
+					<section>
+						<h2>git checkout -b [switch to new branch]</h2>
+						<ul>
+							<li>Creates new branch and then switches to it</li>
+						</ul>
+					</section>
 				</section>
 
 				<section>
-					<h2>Merging</h2>
+					<section>
+						<h2>Merging</h2>
+						<img src="https://www.atlassian.com/git/images/tutorials/advanced/merging-vs-rebasing/02.svg" alt="">
+					</section>
+					<section>
+						<h2>Merging</h2>
+						<pre><code class="hljs" data-trim contenteditable>
+							git checkout [feature branch]
+							git merge master
+						</code></pre>
+						<p>or</p>
+						<pre><code class="hljs" data-trim contenteditable>
+							git merge master [feature branch]
+						</code></pre>
+					</section>
 				</section>
 
 				<section>
-					<h2>Rebasing</h2>
+					<section>
+						<h2>Rebasing</h2>
+						<img src="https://www.atlassian.com/git/images/tutorials/advanced/merging-vs-rebasing/03.svg" alt="">
+					</section>
+					<section>
+						<h2>Rebasing</h2>
+
+						<pre><code class="hljs" data-trim contenteditable>
+git checkout [feature branch]
+git rebase master
+						</code></pre>
+					</section>
 				</section>
 
 				<section>
+					<h2>Pull Requests and Undoing Changes</h2>
 					<img src="https://octodex.github.com/images/gracehoppertocat.jpg" alt="">
 				</section>
 
 				<section>
-					<h2>Submitting a pull request</h2>
+					<h2>Submitting a Pull Request</h2>
 				</section>
 
 				<section>
-					<h2>Reviewinga  pull request</h2>
+					<h2>Reviewing a Pull Request</h2>
 				</section>
 
 				<section>
-					<h2>Undoing local changes</h2>
+					<h2>Undoing Local Changes</h2>
 				</section>
 
 				<section>
-					<h2>Undoing remote changes</h2>
+					<h2>Undoing Remote Changes</h2>
 				</section>
 
 				<section>
