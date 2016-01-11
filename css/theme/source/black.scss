@@ -56,18 +56,21 @@ $heading4Size: 1.0em;
 	opacity: 0.5;
 }
 .w-50 {
-	width: 49%;
-	box-sizing: border-box;
-	float: left;
-
-	.reveal ul& {
-		@extend .w-50;
-		margin: 0;
-	}
+	width: 49% !important;
+	box-sizing: border-box !important;
+	float: left !important;
 }
 .h-80 {
 	height: 80%;
 	width: auto;
+}
+.table-of-context {
+	h4 a {
+		color: $red !important;
+	}
+	h4 {
+		margin: auto 2rem !important;
+	}
 }
 .cheatsheet {
 	@extend .left-align;
@@ -75,9 +78,8 @@ $heading4Size: 1.0em;
 		font-size: 1rem;
 	}
 	.reveal & ul {
-		width: 49%;
-		box-sizing: border-box;
-		margin: auto !important;
+		@extend .w-50;
+		margin: auto;
 	}
 }
 

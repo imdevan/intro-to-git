@@ -19,24 +19,26 @@
 .op-50 {
   opacity: 0.5; }
 
-.w-50, .reveal ul& {
-  width: 49%;
-  box-sizing: border-box;
-  float: left; }
-  .reveal ul& {
-    margin: 0; }
+.w-50, .reveal .cheatsheet ul {
+  width: 49% !important;
+  box-sizing: border-box !important;
+  float: left !important; }
 
 .h-80 {
   height: 80%;
   width: auto; }
 
+.table-of-context h4 a {
+  color: #FE8F8E !important; }
+
+.table-of-context h4 {
+  margin: auto 2rem !important; }
+
 .cheatsheet p, .cheatsheet ul > li {
   font-size: 1rem; }
 
 .reveal .cheatsheet ul {
-  width: 49%;
-  box-sizing: border-box;
-  margin: auto !important; }
+  margin: auto; }
 
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
