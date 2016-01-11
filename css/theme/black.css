@@ -4,6 +4,9 @@
  * By Hakim El Hattab, http://hakim.se
  */
 @import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+.red {
+  color: #FE8F8E; }
+
 .left-align, .cheatsheet {
   text-align: left; }
 
