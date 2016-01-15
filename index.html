@@ -177,16 +177,16 @@ git clone [repo url] # Copy a repository from a remote url
 				<section>
 					<h2>Pushing to a Repo</h2>
 					<pre><code class="hljs" data-trim contenteditable>
-git add -A # Stages everything in the directory and child directories
-git commit -m “commit message” # Commits those changes
-git push # Push changes to remote repo
+git add -A 						# Stages everything in the directory and child directories
+git commit -m “commit message” 	# Commits those changes
+git push 						# Push changes to remote repo
 					</code></pre>
 				</section>
 
 				<section>
 					<h2>Pulling Changes From a Remote Repo</h2>
 					<pre><code class="hljs" data-trim contenteditable>
-git pull # Pull down any changes that were made to a remote branch
+git pull 	# Pull down any changes that were made to a remote branch
 					</code></pre>
 				</section>
 
@@ -198,9 +198,9 @@ git pull # Pull down any changes that were made to a remote branch
 				<section>
 						<h2>Dealing with Branches</h2>
 						<pre><code class="hljs" data-trim contenteditable>
-git branch [branch name] 	# Creates a new branch (shows branches if no name is provided)
-git checkout [branch name] # Switch to branch name provided
-git checkout -b [new branch name] # Creates a new branch and switces to it
+git branch [branch name] 			# Creates a new branch (shows branches if no name is provided)
+git checkout [branch name] 			# Switch to branch name provided
+git checkout -b [new branch name] 	# Creates a new branch and switces to it
 						</code></pre>
 				</section>
 
@@ -212,12 +212,12 @@ git checkout -b [new branch name] # Creates a new branch and switces to it
 					<section>
 						<h2>Merging</h2>
 						<pre><code class="hljs" data-trim contenteditable>
-git checkout [feature branch]
-git merge master
+git checkout [feature branch] 	# Switch to branch
+git merge master 				# Merge master into branch
 						</code></pre>
 						<p>or</p>
 						<pre><code class="hljs" data-trim contenteditable>
-git merge master [feature branch]
+git merge master [feature branch] 	# Merge feature branch into master
 						</code></pre>
 					</section>
 					<section data-background="https://media.giphy.com/media/fcpJebgkQ14UE/giphy.gif">
@@ -261,9 +261,9 @@ git merge master [feature branch]
 					<section>
 						<h2>Rebasing</h2>
 						<pre><code class="hljs" data-trim contenteditable>
-git checkout [feature branch]
-git rebase [remote]/[branch]
-git rebase [remote]/[branch] -i
+git checkout [feature branch] 		# Switch to branch
+git rebase [remote]/[branch] 		# Put your changes on top of remote branch
+git rebase [remote]/[branch] -i 	# Use this to squash multilple commits into one
 						</code></pre>
 					</section>
 				</section>
@@ -284,9 +284,10 @@ git rebase [remote]/[branch] -i
 					<h2>Reviewing a Pull Request</h2>
 					<p>Makes local branch of pull request for testing</p>
 					<pre><code class="hljs" data-trim contenteditable>
-git fetch upstream pull/[pull request number]/head:[branch name]
-git checkout [branch name]
+git fetch upstream pull/[pull request number]/head:[branch name] # Get pull request
+git checkout [branch name] 										 # Switch to branch
 					</code></pre>
+					<p>(ie git fetch upstream pull/1/head:test)</p>
 				</section>
 
 				<section>
@@ -296,10 +297,10 @@ git checkout [branch name]
 					<section>
 						<h2>Stash</h2>
 						<pre><code class="hljs" data-trim contenteditable>
-git stash # hide last changes
-git stash pop # brings back changes
-git stash clear # clear all stashed changes
-git stash list # show all stashed changes
+git stash 			# hide last changes
+git stash pop 		# brings back changes
+git stash clear 	# clear all stashed changes
+git stash list 		# show all stashed changes
 						</code></pre>
 					</section>
 					<section>
@@ -311,8 +312,8 @@ git checkout -- [file path] # Reverts file to last commit (changes lost)
 					<section class="has-dark-background" data-background-transition="fade" data-background="#000000">
 						<h2 class="white">Reset</h2>
 						<pre><code class="hljs" data-trim contenteditable>
-git fetch upstream # Bring upstream into local environment
-git reset --hard upstream/master # Set local environment to upstream
+git fetch upstream 					# Bring upstream into local environment
+git reset --hard upstream/master 	# Set local environment to upstream
 						</code></pre>
 						<img src="https://octodex.github.com/images/grim-repo.jpg" alt="">
 					</section>
@@ -334,9 +335,9 @@ git reset --hard [commit] # Reset back to commit number
 					<section class="has-dark-background" data-background-transition="fade" data-background="#000000">
 						<h2 class="white">Reset</h2>
 						<pre><code class="hljs" data-trim contenteditable>
-git fetch upstream # Bring upstream into local environment
-git reset --hard upstream/master # Set local environment to upstream
-git push origin master --force # push changes back up to your fork
+git fetch upstream  				# Bring upstream into local environment
+git reset --hard upstream/master 	# Set local environment to upstream
+git push origin master --force 		# push changes back up to your fork
 						</code></pre>
 						<img src="https://octodex.github.com/images/grim-repo.jpg" alt="">
 					</section>
