@@ -7,18 +7,17 @@
 .white {
   color: #fff !important; }
 
+.text-bordered {
+  text-shadow: 0px 0px 25px rgba(255, 255, 0, 0.8) !important; }
+
 .red {
   color: #FE8F8E; }
 
 .left-align, .cheatsheet {
   text-align: left; }
-  .left-align h3, .cheatsheet h3 {
-    border-left: 3px solid #42affa; }
 
 .right-align {
   text-align: right; }
-  .right-align h3 {
-    border-right: 3px solid #42affa; }
 
 .op-50 {
   opacity: 0.5; }
@@ -35,6 +34,16 @@
 .table-of-context h3 {
   padding-left: 2rem;
   padding-right: 2rem; }
+
+.table-of-context .left-align, .table-of-context .cheatsheet {
+  text-align: left; }
+  .table-of-context .left-align h3, .table-of-context .cheatsheet h3 {
+    border-left: 3px solid #42affa; }
+
+.table-of-context .right-align {
+  text-align: right; }
+  .table-of-context .right-align h3 {
+    border-right: 3px solid #42affa; }
 
 .cheatsheet p, .cheatsheet ul > li {
   font-size: 1rem; }

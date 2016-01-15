@@ -1,11 +1,9 @@
 <!doctype html>
 <html lang="en">
-
 	<head>
 		<meta charset="utf-8">
 
 		<title>Git and Github</title>
-
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
 
@@ -35,14 +33,12 @@
 	</head>
 
 	<body>
-
 		<div class="reveal">
-
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
 					<h1>Git and Your Terminal</h1>
-					<h3>What Are Hopefully Useful Pointers; if not A Decent Review</h3>
+					<h3>What Are Hopefully Useful Pointers; If Not A Decent Review</h3>
 					<p>
 						<small>Created by <a href="http://imdevan.github.io" target="_blank">Devan Huapaya</a> / <a href="http://twitter.com/devanipsum" target="_blank">@devanIpsum</a></small>
 					</p>
@@ -85,7 +81,7 @@
 						</small>
 						<small class="right-align w-50">
 							<h3>Collaborator</h3>
-							<p>Somone contributing to a project</p>
+							<p>Someone contributing to a project</p>
 							<h3>Organization</h3>
 							<p>Provides a common place for projects that have more than one collaborator</p>
 						</small>
@@ -95,15 +91,14 @@
 				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
-						<h2>How Different People Use Git</h2>
-
+						<h2>How People Use Git Differently</h2>
 						<img src="  https://octodex.github.com/images/chellocat.jpg" alt="">
 					</section>
 					<section>
 						<h2>Centralized Workflow</h2>
 						<ul>
 							<li>All members share one repo</li>
-							<li>All members push all there changes to that repo</li>
+							<li>All members push all the changes to that repo</li>
 							<li>Code changes are taken as merges on the master or someone else's code base onto master</li>
 							<li>The last one <span class="red">tends to cause confusing merge conflicts</span></li>
 						</ul>
@@ -127,7 +122,7 @@
 					<section>
 						<h2>Gitflow Workflow</h2>
 						<ul>
-							<li>doesn't add any new concepts or commands beyond what is used in Feature Branch</li>
+							<li>Doesn't add any new concepts or commands beyond what is used in Feature Branch</li>
 							<li>Assigns very specific roles to different branches and defines how and when they should interact</li>
 						</ul>
 					</section>
@@ -144,27 +139,10 @@
 							<li>When feature is completed it is merged into the orginization's repo by submitting a pull request</li>
 						</ul>
 					</section>
-					<section>
-						<h2>Forking and Branching</h2>
-						<img src="https://www.atlassian.com/git/images/tutorials/collaborating/comparing-workflows/forking-workflow/01.svg" alt="">
-					</section>
-					<section>
-						<h2>Forking and Branching</h2>
 
-						<ol>
-							<p>The collaborator</p>
-							<li>Forks the org/production repo</li>
-							<li>Makes branch for each feature they want to work on</li>
-							<li>Rebases branch based on org/production repo before submitting a pull request</li>
-							<li>Submits a pull request to org/production repo master or staging branch</li>
-							<li>
-								A DIFFERENT collaborator tests the pull request and checks for code coverage
-								<ul><li>That collabotor either reject or merge the pull request</li></ul>
-							</li>
-						</ol>
-					</section>
 					<section>
-						<img class="h-80" src="https://cloud.githubusercontent.com/assets/3521824/12247217/9c60a004-b878-11e5-9b2b-8ec3b6a801fe.png" alt="">
+						<h2>Forking and Branching</h2>
+						<img  style="height: 650px;width: auto;"src="https://cloud.githubusercontent.com/assets/3521824/12247217/9c60a004-b878-11e5-9b2b-8ec3b6a801fe.png" alt="">
 					</section>
 				</section>
 
@@ -175,26 +153,19 @@
 
 				<section>
 					<h2>Starting a Repo</h2>
-
 					<pre><code class="hljs" data-trim contenteditable>
-git init
-git add -A
-git commit -m “first commit”
-git remote add origin https://github.com/imdevan/intro-to-git.git
-git push --set-upstream origin master or git push -u origin master
+git init # Creates git folder and starts a git history
+git add -A # Stages everything in the directory and child directories
+git commit -m “first commit” # Commits those changes
+git remote add origin https://github.com/imdevan/intro-to-git.git # Tells .git where to store files remotely
+git push -u origin master # Push and intiate the master branch remotely
 					</code></pre>
 				</section>
 
 				<section>
 					<h2>Cloning a Repo</h2>
 					<pre><code class="hljs" data-trim contenteditable>
-git clone [repo url]
-rm -rf .git
-git init
-git add -A
-git commit -m “first commit”
-git remote add origin [your repo url]
-git push --set-upstream origin master or git push -u origin master
+git clone [repo url] # Copy a repository from a remote url
 				</code></pre>
 				</section>
 
@@ -206,16 +177,16 @@ git push --set-upstream origin master or git push -u origin master
 				<section>
 					<h2>Pushing to a Repo</h2>
 					<pre><code class="hljs" data-trim contenteditable>
-git add -A
-git commit -m "commit message”
-git push
+git add -A # Stages everything in the directory and child directories
+git commit -m “commit message” # Commits those changes
+git push # Push changes to remote repo
 					</code></pre>
 				</section>
 
 				<section>
-					<h2>Pulling Changes to a Repo</h2>
+					<h2>Pulling Changes From a Remote Repo</h2>
 					<pre><code class="hljs" data-trim contenteditable>
-						git pull
+git pull # Pull down any changes that were made to a remote branch
 					</code></pre>
 				</section>
 
@@ -225,39 +196,12 @@ git push
 				</section>
 
 				<section>
-					<section>
 						<h2>Dealing with Branches</h2>
 						<pre><code class="hljs" data-trim contenteditable>
-git branch [branch name]
-git checkout [branch name]
-git checkout -b [new branch name]
+git branch [branch name] 	# Creates a new branch (shows branches if no name is provided)
+git checkout [branch name] # Switch to branch name provided
+git checkout -b [new branch name] # Creates a new branch and switces to it
 						</code></pre>
-					</section>
-					<section>
-						<h2>git branch [branch name]</h2>
-						<ul>
-							<li>Shows list of current branches</li>
-							<li>Switches to branch if one is provided</li>
-						</ul>
-					</section>
-					<section>
-						<h2>git checkout [branch name]</h2>
-						<ul>
-							<li>Switches to branch if one is provided</li>
-							<li>
-								You can also checkout files using
-							</li>
-						</ul>
-						<pre><code data-trim>
-							git checkout -- [optional branch name] [file name]
-						</code></pre>
-					</section>
-					<section>
-						<h2>git checkout -b [new branch name]</h2>
-						<ul>
-							<li>Creates new branch and then switches to it</li>
-						</ul>
-					</section>
 				</section>
 
 				<section>
@@ -275,6 +219,37 @@ git merge master
 						<pre><code class="hljs" data-trim contenteditable>
 git merge master [feature branch]
 						</code></pre>
+					</section>
+					<section data-background="https://media.giphy.com/media/fcpJebgkQ14UE/giphy.gif">
+						<h1 class="white text-bordered">DO NOT MERGE INTO PRODUCTION</h1>
+					</section>
+					<section data-background="https://media.giphy.com/media/xTiTnipmSqmUjTPHR6/giphy.gif">
+						<h1 class="white text-bordered">DO NOT MERGE INTO PRODUCTION</h1>
+					</section>
+					<section data-background="http://gifrific.com/wp-content/uploads/2015/02/Britney-Spears-Cringe-Face.gif">
+						<h1 class="white text-bordered">DO NOT MERGE INTO PRODUCTION</h1>
+					</section>
+					<section data-background="https://media.giphy.com/media/F6d5oNpTLssQ8/giphy.gif">
+						<h1 class="white text-bordered">DO NOT MERGE INTO PRODUCTION</h1>
+					</section>
+					<section data-background="http://i.imgur.com/op9PWrr.gif">
+						<h1 class="white text-bordered">DO NOT MERGE INTO PRODUCTION</h1>
+					</section>
+					<section data-background="http://i.imgur.com/KQcTE3a.gif">
+						<h1 class="white text-bordered">DO NOT MERGE INTO PRODUCTION</h1>
+					</section>
+					<section data-background="https://media.giphy.com/media/vJKeu2upniCSk/giphy.gif">
+						<h1 class="white text-bordered">DO NOT MERGE INTO PRODUCTION</h1>
+						<h1 class="white text-bordered">DO A PULL REQUEST</h1>
+					</section>
+					<section data-background="https://media.giphy.com/media/xTcnSNxfOFmfCCUTPG/giphy.gif">
+						<h1 class="white text-bordered">SUBMIT A PULL REQUEST</h1>
+					</section>
+					<section data-background="https://media.giphy.com/media/YxffWg4x40kY8/giphy.gif">
+						<h1 class="white text-bordered">SUBMIT A PULL REQUEST</h1>
+					</section>
+					<section data-background="https://media.giphy.com/media/iPTTjEt19igne/giphy.gif">
+						<h1 class="white text-bordered">SUBMIT A PULL REQUEST</h1>
 					</section>
 				</section>
 
@@ -301,7 +276,7 @@ git rebase [remote]/[branch] -i
 				<section>
 					<h2>Submitting a Pull Request</h2>
 					<ul>
-						<li>No coding neaded for this one</li>
+						<li>No terminal neaded for this one</li>
 					</ul>
 				</section>
 
@@ -321,23 +296,23 @@ git checkout [branch name]
 					<section>
 						<h2>Stash</h2>
 						<pre><code class="hljs" data-trim contenteditable>
-git stash
-git stash pop
-git stash
+git stash # hide last changes
+git stash pop # brings back changes
+git stash clear # clear all stashed changes
+git stash list # show all stashed changes
 						</code></pre>
 					</section>
 					<section>
 						<h2>Checking Out Files Again</h2>
 						<pre><code class="hljs" data-trim contenteditable>
-git checkout -- [file path]
+git checkout -- [file path] # Reverts file to last commit (changes lost)
 						</code></pre>
 					</section>
 					<section class="has-dark-background" data-background-transition="fade" data-background="#000000">
 						<h2 class="white">Reset</h2>
 						<pre><code class="hljs" data-trim contenteditable>
-git fetch upstream
-git reset --hard upstream/master
-git push origin master --force
+git fetch upstream # Bring upstream into local environment
+git reset --hard upstream/master # Set local environment to upstream
 						</code></pre>
 						<img src="https://octodex.github.com/images/grim-repo.jpg" alt="">
 					</section>
@@ -350,18 +325,18 @@ git push origin master --force
 					<section>
 						<h2>Go Back to a Previous Commit</h2>
 						<pre><code class="hljs" data-trim contenteditable>
-git revert [commit]
+git revert [commit] # Go back to commit number
 						</code></pre>
 						<pre><code class="hljs" data-trim contenteditable>
-git reset --hard [commit]
+git reset --hard [commit] # Reset back to commit number
 						</code></pre>
 					</section>
 					<section class="has-dark-background" data-background-transition="fade" data-background="#000000">
 						<h2 class="white">Reset</h2>
 						<pre><code class="hljs" data-trim contenteditable>
-git fetch upstream
-git reset --hard upstream/master
-git push origin master --force
+git fetch upstream # Bring upstream into local environment
+git reset --hard upstream/master # Set local environment to upstream
+git push origin master --force # push changes back up to your fork
 						</code></pre>
 						<img src="https://octodex.github.com/images/grim-repo.jpg" alt="">
 					</section>
@@ -377,6 +352,7 @@ git push origin master --force
 							<li>Things I don't want to be included into project</li>
 							<li>Things that take a lot of space like libraries and frameworks</li>
 							<li>Sensitive user information (databases) & api keys</li>
+							<li>node_modules/, bower_components/, maven things, etc</li>
 						</ul>
 					</section>
 					<section>
@@ -401,7 +377,7 @@ git push origin master --force
 					<section>
 						<h2>Ask for Halp!</h2>
 						<ul>
-							<li>Eventurally somone will have the knowledge to help</li>
+							<li>Eventually somone will have the knowledge to help</li>
 							<li><a href="http://twiter.com/devanipsum">@devanIpsum</a></li>
 						</ul>
 					</section>
